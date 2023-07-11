@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="navbar sticky-top py-2" id="cabecalho">
+    <header class="navbar py-2 sticky-top" id="cabecalho">
         <div class="container text-center">
             <div class="row justify-content-md-between align-items-center">
                 <div class="col col-md-4" id="header_logo">
@@ -55,13 +55,34 @@
     </header>
     <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
         <section id="inicio">
-            <h1 class="text-center text-colored">Início</h1>
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="images/carousel-1.jpg" alt="um pouco sobre mim">
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://t.me/patricianegrao" target="_blank">
+                            <img class="w-100" src="images/carousel-2.jpg" alt="Telegram">
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                </div>
+            </div>
         </section>
         <section id="sobre">
             <h1 class="text-center text-colored">Sobre</h1>
             <h2 class="text-center mb-3 pb-2">Patrícia Negrão</h2>
             <div class="clearfix">
-                    <div class=" col-md-6 col-lg-4 float-md-start pb-3 me-3">
+                    <div class=" col-md-6 col-lg-4 float-md-start pb-3 me-md-3">
                         <img class="rounded w-100" src="images/linkedin_profile.jpeg" alt="Foto de perfil do Linkedin">
                     </div>
 
@@ -108,7 +129,6 @@
                         andamento: • Eng. da Qualidade • Auditor Líder 37001
                     </p>
             </div>
-
         </section>
         <section id="servicos">
             <h2 class="text-center">Serviços</h2>
@@ -117,26 +137,21 @@
                 alias. Animi.</p>
         </section>
         <section id="contato">
-            <div class="row">
-                <h2 class="text-center">
-                    Contato
-                </h2>
-            </div>
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-6 p-3">
                     <form>
                         <div>
                             <label class="form-label" for="nome">Seu nome</label>
-                            <input class="form-control" type="text" id="nome">
+                            <input class="form-control" type="text" id="nome" placeholder="Digite seu nome" required>
                         </div>
                         <div>
                             <label class="form-label mt-2" for="mensagem">Sua mensagem:</label>
                             <textarea class="form-control" id="mensagem" cols="20" rows="10"
-                                placeholder="Digite aqui sua mensagem">https://api.whatsapp.com/send?phone=5541987956658&text=</textarea>
+                                placeholder="Digite aqui sua mensagem"></textarea>
                         </div>
                         <div class="d-flex justify-content-between mt-3">
                             <button class="btn btn-danger" type="reset">Limpar</button>
-                            <button class="btn btn-primary" type="button">Enviar</button>
+                            <button class="btn btn-primary" type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -144,31 +159,31 @@
                     <ul>
                         <li>
                             <a href="https://www.linkedin.com/in/patricianegraocruz/" target="_blank">
-                                <i class="bi bi-linkedin"></i>
+                                <i class="fs-3 bi bi-linkedin"></i>
                                 Linkedin
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/negraoz/" target="_blank">
-                                <i class="bi bi-instagram"></i>
+                                <i class="fs-3 bi bi-instagram"></i>
                                 Instagram
                             </a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/patricianegraocruz" target="_blank">
-                                <i class="bi bi-facebook"></i>
+                                <i class="fs-3 bi bi-facebook"></i>
                                 Facebook
                             </a>
                         </li>
                         <li>
                             <a href="https://chat.whatsapp.com/JjJ8ujsJtqR6TFUf4ArBiO" target="_blank">
-                                <i class="bi bi-whatsapp"></i>
+                                <i class="fs-3 bi bi-whatsapp"></i>
                                 Grupo: Normas & Leis
                             </a>
                         </li>
                         <li>
                             <a href="https://t.me/patricianegrao" target="_blank">
-                                <i class="bi bi-telegram"></i>
+                                <i class="fs-3 bi bi-telegram"></i>
                                 Telegram
                             </a>
                         </li>
@@ -181,6 +196,11 @@
         <p>Marcos Viana - <a href="https://github.com/Marcosviana91" target="_blank">GitHub</a> - <a href="https://www.linkedin.com/in/marcos-ant%C3%B4nio-gonzaga-viana-176307132/" target="_blank">LinkedIn</a></p>
     </footer>
     <script src="libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery/jquery-3.7.0.min.js"></script>
+    <script src="libs/jquery/jquery.mask.min.js"></script>
+    <script src="libs/jquery/jquery.validate.min.js"></script>
+    <script src="libs/jquery/messages_pt_BR.min.js"></script>
+    <script src="libs/script.js"></script>
 </body>
 
 </html>

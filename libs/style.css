@@ -39,9 +39,27 @@ header {
     color: #e15f41;
 }
 
+.carousel-inner img {
+    max-height: 70vh;
+}
+
+#carousel.carousel button.carousel-control-prev:hover {
+    background-image: linear-gradient(to left, transparent 20%, rgba(0, 0, 0, 0.4) 100%);
+}
+#carousel.carousel button.carousel-control-next:hover {
+    background-image: linear-gradient(to right, transparent 20%, rgba(0, 0, 0, 0.4) 100%);
+}
+#carousel.carousel button span {
+    width: 60px;
+    height: 90px;
+}
+.carousel-indicators .active{
+    background-color: #e15e41;
+}
+
 body>.container>section {
-    min-height: 85vh;
-    padding: 12px 24px;
+    min-height: 50vh;
+    padding: 2em 1em;
     margin-bottom: 12px;
 }
 
