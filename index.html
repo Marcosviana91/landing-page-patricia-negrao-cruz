@@ -64,15 +64,28 @@
     <div class="scroll-spy" data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
         <div class="container-md ">
             <span id="inicio"></span>
-            <section>
+            <section is="inicio">
                 <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="w-100" src="images/carousel-1.jpg" alt="um pouco sobre mim">
+                            <a href="#sobre">
+                                <img class="w-100" src="images/carousel-1.jpg" alt="um pouco sobre mim" title="Sobre Patrícia Negrão">
+                            </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://t.me/patricianegrao" target="_blank">
+                            <a href="https://t.me/patricianegrao" target="_blank" title="Telegram">
                                 <img class="w-100" src="images/carousel-2.jpg" alt="Telegram">
+                            </a>
+                        </div>
+                        <div class="carousel-item row">
+                            <a href="https://hotmart.com/pt-br/marketplace/produtos/ebook-o-beaba-da-nbr-iso-9001-leitura-e-interpretacao/A83175876A"
+                                target="_blank" title="Ver em Hotmart">
+                                <img class="col-8 offset-2"
+                                    src="images/Ebook - O beabá da NBR ISO 9001 Leitura e interpretação.png"
+                                    alt="Ebook - O beabá da NBR ISO 9001 Leitura e interpretação">
+                                <p class="col-3 d-none">
+                                    Este ebook tem como objetivo auxiliar empresas e profissionais que gostariam ter um conhecimento na interpretação e implementação de um sistema de gestão da qualidade com base na norma ISO 9001 com mais objetividade e clareza sobre os requisitos aplicados aos processos. Tendo assim, uma compreensão geral dos conceitos do padrão ISO 9001:2015 e como os requisitos afetam as operações diárias das organizações.
+                                </p>
                             </a>
                         </div>
                     </div>
@@ -85,10 +98,11 @@
                     <div class="carousel-indicators">
                         <button class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
                         <button data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button data-bs-target="#carousel" data-bs-slide-to="2"></button>
                     </div>
                 </div>
             </section>
-            <section>
+            <section is="sobre">
                 <h1 class="text-center text-colored" id="sobre">Sobre</h1>
                 <h2 class="text-center mb-3 pb-2">Patrícia Negrão</h2>
                 <div class="clearfix">
@@ -140,7 +154,7 @@
                     </p>
                 </div>
             </section>
-            <section>
+            <section is="servicos">
                 <h1 class="text-center" id="servicos">Serviços</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis totam obcaecati esse sunt.
                     Maiores,
@@ -148,7 +162,7 @@
                     hic
                     alias. Animi.</p>
             </section>
-            <section>
+            <section is="contato">
                 <div class="row align-items-center">
                     <h1 id="contato">Contato</h1>
                     <div class="col-md-6 p-3">
