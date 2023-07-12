@@ -1,9 +1,9 @@
 .text-colored {
-    color: #e15f41;
+    color: #e15e41;
 }
 
 .bg-colored {
-    background-color: #e15f41;
+    background-color: #e15e41;
 }
 
 * {
@@ -19,7 +19,7 @@ footer a {
     text-decoration: none;
 }
 
-.container p {
+.container-md p {
     text-indent: 0.5in;
     text-align: justify;
 }
@@ -31,12 +31,12 @@ header {
 
 #header_menu ul.nav .nav-link.active,
 #header_menu ul.nav .nav-link:hover {
-    background-color: #e15f41;
+    background-color: #e15e41;
     color: #E8CBB9;
 }
 
 #header_menu a:visited {
-    color: #e15f41;
+    color: #e15e41;
 }
 
 .carousel-inner img {
@@ -57,22 +57,29 @@ header {
     background-color: #e15e41;
 }
 
-body>.container>section {
+body>.container-md>section {
     min-height: 50vh;
     padding: 2em 1em;
     margin-bottom: 12px;
 }
 
-body>.container>section:nth-child(odd) {
+body>.container-md>section:nth-child(odd) {
     background-color: #e8cbb991;
 }
 
 #sobre h2 {
-    border-bottom: 1px solid #e15f41;
+    border-bottom: 1px solid #e15e41;
+}
+
+section#contato .form-floating textarea:focus,
+section#contato .form-floating input:focus {
+    border-color: #E8CBB9;
+    box-shadow: 0px 0px 10px #e15e41;
 }
 
 textarea {
     resize: none;
+    height: 10rem !important;
 }
 
 /* 
