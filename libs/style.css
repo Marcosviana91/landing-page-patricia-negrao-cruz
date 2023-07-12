@@ -6,6 +6,10 @@
     background-color: #e15e41;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -39,6 +43,11 @@ header {
     color: #e15e41;
 }
 
+.scroll-spy {
+    height: 75vh;
+    overflow: auto;
+}
+
 .carousel-inner img {
     max-height: 70vh;
 }
@@ -57,22 +66,22 @@ header {
     background-color: #e15e41;
 }
 
-body>.container-md>section {
-    min-height: 50vh;
+body .container-md>section {
+    /* min-height: 70vh; */
     padding: 2em 1em;
     margin-bottom: 12px;
 }
 
-body>.container-md>section:nth-child(odd) {
+body .container-md>section:nth-child(odd) {
     background-color: #e8cbb991;
 }
 
-#sobre h2 {
+section h2 {
     border-bottom: 1px solid #e15e41;
 }
 
-section#contato .form-floating textarea:focus,
-section#contato .form-floating input:focus {
+section .form-floating textarea:focus,
+section .form-floating input:focus {
     border-color: #E8CBB9;
     box-shadow: 0px 0px 10px #e15e41;
 }
@@ -82,6 +91,9 @@ textarea {
     height: 10rem !important;
 }
 
+footer *{
+    /* background-color: transparent; */
+}
 /* 
 breakpoints:
   xs: 0,
