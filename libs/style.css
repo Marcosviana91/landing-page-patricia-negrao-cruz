@@ -1,9 +1,31 @@
+@font-face {
+    font-family: 'Coolesta';
+    src: url('../fonts/Coolesta.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor0: #E6D5C3;
+    --cor1: #efcab7;
+    /* #E8CBB9*/
+    --cor2: #D5A988;
+    --cor3: #A06E52;
+    /* #e15e41 */
+    --cor4: #583828;
+
+    --fonte-padrao: 'Raleway', sans-serif;
+    --fonte-coolesta: 'Coolesta', cursiva
+}
+
+
+
 .text-colored {
-    color: #e15e41;
+    color: var(--cor3);
 }
 
 .bg-colored {
-    background-color: #e15e41;
+    background-color: var(--cor3);
 }
 
 body::-webkit-scrollbar {
@@ -11,7 +33,7 @@ body::-webkit-scrollbar {
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao);
 }
 
 ul li {
@@ -29,18 +51,18 @@ footer a {
 }
 
 header {
-    background-color: #E8CBB9;
+    background-color: var(--cor1);
     height: max-content;
 }
 
 #header_menu ul.nav .nav-link.active,
 #header_menu ul.nav .nav-link:hover {
-    background-color: #e15e41;
-    color: #E8CBB9;
+    background-color: var(--cor3);
+    color: var(--cor1);
 }
 
 #header_menu a:visited {
-    color: #e15e41;
+    color: var(--cor3);
 }
 
 .scroll-spy {
@@ -55,15 +77,18 @@ header {
 #carousel.carousel button.carousel-control-prev:hover {
     background-image: linear-gradient(to left, transparent 20%, rgba(0, 0, 0, 0.4) 100%);
 }
+
 #carousel.carousel button.carousel-control-next:hover {
     background-image: linear-gradient(to right, transparent 20%, rgba(0, 0, 0, 0.4) 100%);
 }
+
 #carousel.carousel button span {
     width: 60px;
     height: 90px;
 }
-.carousel-indicators .active{
-    background-color: #e15e41;
+
+.carousel-indicators .active {
+    background-color: var(--cor3);
 }
 
 body .container-md>section {
@@ -73,17 +98,19 @@ body .container-md>section {
 }
 
 body .container-md>section:nth-child(odd) {
-    background-color: #e8cbb991;
+    background-color: var(--cor0);
 }
 
 section h2 {
-    border-bottom: 1px solid #e15e41;
+    border-bottom: 1px solid var(--cor3);
+    font-family: var(--fonte-coolesta);
+    font-weight: bold;
 }
 
 section .form-floating textarea:focus,
 section .form-floating input:focus {
-    border-color: #E8CBB9;
-    box-shadow: 0px 0px 10px #e15e41;
+    border-color: var(--cor1);
+    box-shadow: 0px 0px 10px var(--cor3);
 }
 
 textarea {
@@ -91,9 +118,10 @@ textarea {
     height: 10rem !important;
 }
 
-footer *{
+footer * {
     /* background-color: transparent; */
 }
+
 /* 
 breakpoints:
   xs: 0,
@@ -103,6 +131,4 @@ breakpoints:
   xl: 1200px,
   xxl: 1400px
 */
-@media screen and (max-width:767px) {
-
-}
+@media screen and (max-width:767px) {}
