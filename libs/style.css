@@ -24,8 +24,17 @@
     color: var(--cor3);
 }
 
+.bg-colored--lightest {
+    background-color: var(--cor1);
+}
+.bg-colored--light {
+    background-color: var(--cor2);
+}
 .bg-colored {
     background-color: var(--cor3);
+}
+.bg-colored--dark {
+    background-color: var(--cor4);
 }
 
 body::-webkit-scrollbar {
@@ -122,6 +131,24 @@ footer * {
     /* background-color: transparent; */
 }
 
+.accordion-button{
+    color: var(--cor4);
+    background-color: var(--cor1);
+}
+.accordion-button:not(.collapsed){
+    color: var(--cor4);
+    background-color: var(--cor2);
+}
+
+.accordion-button:focus {
+    border-color: var(--cor2);
+    box-shadow: 0 0 0 0.25rem rgba(213, 169, 136, 0.25);
+    
+}
+
+.accordion li {
+    list-style: square;
+}
 /* 
 breakpoints:
   xs: 0,
